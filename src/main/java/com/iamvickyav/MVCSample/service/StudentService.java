@@ -1,5 +1,7 @@
-package com.iamvickyav.MVCSample;
+package com.iamvickyav.MVCSample.service;
 
+import com.iamvickyav.MVCSample.model.Gender;
+import com.iamvickyav.MVCSample.model.Student;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -27,11 +29,11 @@ public class StudentService {
 
     private void prepareMap() {
         if(map.isEmpty()) {
-            Student s1 = new Student(1, "Vicky", Gender.MALE, new Date(1992, 8, 30));
-            Student s2 = new Student(2, "Keerthu", Gender.FEMALE, new Date(1993, 2, 23));
-            Student s3 = new Student(3, "Sathish", Gender.MALE, new Date(1993, 1, 31));
-            Student s4 = new Student(4, "Dhivakar", Gender.MALE, new Date(1993, 2, 9));
-            Student s5 = new Student(5, "Praveen", Gender.MALE, new Date(1993, 3, 7));
+            Student s1 = new Student(1, "Vicky", Gender.MALE);
+            Student s2 = new Student(2, "Keerthu", Gender.FEMALE);
+            Student s3 = new Student(3, "Sathish", Gender.MALE);
+            Student s4 = new Student(4, "Dhivakar", Gender.MALE);
+            Student s5 = new Student(5, "Praveen", Gender.MALE);
 
             map.put(s1.id, s1);
             map.put(s2.id, s2);

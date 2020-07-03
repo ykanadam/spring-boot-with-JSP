@@ -12,7 +12,7 @@
 	<artifactId>MVCSample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MVCSample</name>
-	<description>Demo project for Spring Boot</description>
+	<packaging>war</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -28,6 +28,13 @@
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -35,6 +42,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<finalName>Demo</finalName>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

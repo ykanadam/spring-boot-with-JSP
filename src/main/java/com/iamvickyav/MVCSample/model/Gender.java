@@ -1,4 +1,4 @@
-package com.iamvickyav.MVCSample;
+package com.iamvickyav.MVCSample.model;
 
 public enum Gender {
     MALE,
