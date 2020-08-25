@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Student Page</title>
+    <title>Student Page1</title>
 </head>
 <body>
     <h2>You are viewing details of the following student </h2>
